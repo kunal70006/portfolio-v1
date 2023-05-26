@@ -1,9 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout title="Frontend Engineer | Kunal">
   <Navbar client:visible />
-  <main class="h-screen"></main>
+  <main class="mt-40">
+    <Hero />
+  </main>
 </Layout>

@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         sans: ["WorkSans", "Inter", ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        "hero-button": "2px 2px",
+        "hero-hovered": "6px 6px",
+      },
     },
   },
   plugins: [],

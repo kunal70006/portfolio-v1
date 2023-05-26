@@ -3,9 +3,9 @@ import { Transition } from "@headlessui/react";
 
 const Navbar = () => {
   const [hover, setHover] = useState(false);
-  const [isHamburgerClicked, setIsHamburgerClicked] = useState(true);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
   return (
-    <nav className="fixed w-full pr-12">
+    <nav className="fixed w-full pr-12 2xl:pr-[30rem] bg-[#f9f5f2]">
       <div className="flex items-center justify-between">
         <div className="flex items-center cursor-pointer">
           <img src="/logo.png" alt="Portfolio logo." width="40" height="61" />
@@ -14,7 +14,7 @@ const Navbar = () => {
           </h1>
         </div>
         <div
-          className="cursor-pointer"
+          className="cursor-pointer lg:hidden"
           onMouseOver={() => setHover(true)}
           onMouseOut={() => setHover(false)}
           onClick={() => setIsHamburgerClicked((t) => !t)}
@@ -58,6 +58,12 @@ const Navbar = () => {
             ></rect>
           </svg>
         </div>
+        <div className="lg:flex gap-8 hidden font-medium">
+          <a className="cursor-pointer">About</a>
+          <a className="cursor-pointer">What I Do</a>
+          <a className="cursor-pointer">My Work</a>
+          <a className="cursor-pointer">Contact</a>
+        </div>
       </div>
 
       <Transition
@@ -69,13 +75,13 @@ const Navbar = () => {
         leaveTo="transform scale-95 opacity-0 max-h-0"
       >
         <div className="border-y-2 border-solid border-black mt-4 py-8 text-lg flex flex-col gap-8 font-medium">
-          <a className="cursor-pointer">About</a>
-          <a className="cursor-pointer">What I Do</a>
-          <a className="cursor-pointer">My Work</a>
-          <a className="cursor-pointer">Contact</a>
+          <a className="cursor-pointer w-fit">About</a>
+          <a className="cursor-pointer w-fit">What I Do</a>
+          <a className="cursor-pointer w-fit">My Work</a>
+          <a className="cursor-pointer w-fit">Contact</a>
           <div className="flex gap-8 items-center">
             <a
-              className="cursor-pointer"
+              className="cursor-pointer transition-transform hover:-translate-y-2"
               href="https://github.com/kunal70006"
               rel="noopener"
               target="_blank"
@@ -83,7 +89,7 @@ const Navbar = () => {
               <img src="/github.png" height={38} width={38} alt="github" />
             </a>
             <a
-              className="cursor-pointer"
+              className="cursor-pointer transition-transform hover:-translate-y-2"
               href="https://www.linkedin.com/in/kunaldeep-singh/"
               rel="noopener"
               target="_blank"
@@ -91,7 +97,7 @@ const Navbar = () => {
               <img src="/insta.svg" height={38} width={38} alt="linkedIn" />
             </a>
             <a
-              className="cursor-pointer"
+              className="cursor-pointer transition-transform hover:-translate-y-2"
               href="https://www.instagram.com/kunaaalisthisusernameavailable/"
               rel="noopener"
               target="_blank"
