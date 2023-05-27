@@ -1,0 +1,23 @@
+---
+import ComponentLayout from "../layouts/ComponentLayout.astro";
+import Button from "./Button.astro";
+---
+
+<ComponentLayout>
+  <div class="lg:w-1/2">
+    <h1 class="text-4xl font-bold mb-4">Just say hi.</h1>
+    <p>
+      I'm always open to new opportunities, so don't hesitate to reach out!
+      Whether you have a question, want to discuss a project, or simply want to
+      say hi, my inbox is waiting. I'll do my absolute best to get back to you
+      as soon as possible. Looking forward to connecting with you!
+    </p>
+    <Button>
+      <a
+        href="mailto:kunaldeepsingh.work@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer">Get In Touch</a
+      >
+    </Button>
+  </div>
+</ComponentLayout>

@@ -5,7 +5,7 @@ const Navbar = () => {
   const [hover, setHover] = useState(false);
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
   return (
-    <nav className="fixed w-full pr-12 2xl:pr-[30rem] bg-[#f9f5f2]">
+    <nav className="fixed w-full top-0 pr-12 2xl:pr-[30rem] bg-[#f9f5f2]">
       <div className="flex items-center justify-between">
         <div className="flex items-center cursor-pointer">
           <img src="/logo.png" alt="Portfolio logo." width="40" height="61" />
