@@ -4,7 +4,7 @@ import Button from "./Button.astro";
 ---
 
 <ComponentLayout>
-  <div class="lg:w-1/2">
+  <div>
     <h1 class="text-4xl font-bold mb-4">Just say hi.</h1>
     <p>
       I'm always open to new opportunities, so don't hesitate to reach out!
@@ -19,5 +19,34 @@ import Button from "./Button.astro";
         rel="noopener noreferrer">Get In Touch</a
       >
     </Button>
+    <div class="mt-16">
+      <h1 class="text-sm text-slate-600 mb-4">Follow</h1>
+      <div class="flex gap-8 items-center">
+        <a
+          class="cursor-pointer transition-transform hover:-translate-y-2"
+          href="https://github.com/kunal70006"
+          rel="noopener"
+          target="_blank"
+        >
+          <img src="/github.png" height={38} width={38} alt="github" />
+        </a>
+        <a
+          class="cursor-pointer transition-transform hover:-translate-y-2"
+          href="https://www.linkedin.com/in/kunaldeep-singh/"
+          rel="noopener"
+          target="_blank"
+        >
+          <img src="/insta.svg" height={38} width={38} alt="linkedIn" />
+        </a>
+        <a
+          class="cursor-pointer transition-transform hover:-translate-y-2"
+          href="https://www.instagram.com/kunaaalisthisusernameavailable/"
+          rel="noopener"
+          target="_blank"
+        >
+          <img src="/linkedin.svg" height={38} width={38} alt="linkedIn" />
+        </a>
+      </div>
+    </div>
   </div>
 </ComponentLayout>

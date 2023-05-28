@@ -3,13 +3,13 @@ import ComponentLayout from "../layouts/ComponentLayout.astro";
 ---
 
 <ComponentLayout>
-  <div class="lg:w-1/2">
+  <div>
     <h1 class="text-4xl font-bold mb-4">About me</h1>
     <p>
       Hola! My name is Kunal, and let me tell you, I find the process of
-      creating websites pretty neat. Ever since I was a kid, back in 2020 when
-      the pandemic hit and we all found ourselves with an abundance of free
-      time, I've been captivated by the art of web development.
+      creating websites pretty neat. Back in 2020 when the pandemic hit and we
+      all found ourselves with an abundance of free time, I've been captivated
+      by the art of web development.
     </p>
 
     <p>
@@ -30,6 +30,22 @@ import ComponentLayout from "../layouts/ComponentLayout.astro";
       > and making contributions to open-source projects. It's an exciting journey,
       and I can't wait to see where it takes me!
     </p>
+    <p class="mt-4">
+      Here are some technologies I've been actively engaged with lately -
+    </p>
+    <div class="flex pl-6 gap-8 mt-2">
+      <ul class="list-disc">
+        <li>Astro</li>
+        <li>NextJS</li>
+        <li>ReactJS</li>
+        <li>VueJS</li>
+      </ul>
+      <ul class="list-disc">
+        <li>StencilJS</li>
+        <li>Typescript</li>
+        <li>Javascript (ES6+)</li>
+        <li>GraphQL</li>
+      </ul>
+    </div>
   </div>
-  <div class="bg-yellow-400">image placeholder</div>
 </ComponentLayout>

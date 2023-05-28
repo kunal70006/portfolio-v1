@@ -4,13 +4,23 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Footer from "../components/Footer.astro";
+import WorkHistory from "../components/WorkHistory.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Frontend Engineer | Kunal">
   <Navbar client:visible />
-  <main class="flex flex-col gap-24">
-    <Hero />
-    <About />
-    <Footer />
-  </main>
+  <div class="flex">
+    <main class="flex flex-col gap-24 lg:w-1/2 lg:pr-8">
+      <Hero />
+      <About />
+      <WorkHistory />
+      <Footer />
+    </main>
+    <div
+      class="hidden lg:w-1/2 lg:flex lg:flex-col items-center rounded-lg mt-28 shadow-2xl mb-8"
+    >
+      <Projects />
+    </div>
+  </div>
 </Layout>
