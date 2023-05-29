@@ -1,3 +1,191 @@
-<div class="flex">
-  <h1 class="text-4xl font-bold my-4 justify-center">Featured Projects</h1>
+---
+import Divider from "./Divider.astro";
+---
+
+<div class="flex flex-col tracking-wider text-justify gap-8">
+  <h1 class="text-4xl font-bold mt-4 mb-8 text-center justify-center">
+    Featured Projects
+  </h1>
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.shipmyparcel.co.in/"
+    >
+      Ship My Parcel (Freelance Project)
+    </a>
+    <img src="/smp.png" alt="ship my parcel screenshot." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      A scalable web application powered by NextJS for an international shipping
+      company that serves a large client base worldwide. The application
+      includes essential features such as shipment tracking, the ability to
+      generate tracking labels for new shipments, and an authenticated admin
+      panel to efficiently manage tracking numbers in bulk, including bulk
+      tracking and bulk deletion functionalities.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Firebase</p>
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://rohan-portfolio-r32e.vercel.app/"
+    >
+      Photographer Portfolio (Freelance Project)
+    </a>
+    <img src="/rohan.png" alt="rohan diwan portfolio." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      In collaboration with a talented photographer, I had the opportunity to
+      develop a stunning portfolio website using Next.js and Tailwind CSS. This
+      meticulously crafted website showcases the photographer's exceptional
+      talent and captures their unique artistic vision. Leveraging the power of
+      NextJS, I created a seamless browsing experience for visitors, ensuring
+      fast loading times and smooth transitions between pages. Tailwind CSS
+      allowed me to implement a visually appealing design with its extensive
+      utility classes, resulting in a clean and modern aesthetic. By combining
+      these technologies, I was able to create a responsive and intuitive
+      portfolio that beautifully presents the photographer's captivating images,
+      inviting viewers to immerse themselves in the artistry and storytelling
+      captured through the lens.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Cloudinary</p>
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://share-me-nextjs.netlify.app/"
+    >
+      ShareMe (Featured Project)
+    </a>
+    <img src="/shareme.png" alt="Share Me." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      A NextJS web application inspired by Pinterest designed to provide a
+      platform where users can add, delete, modify, categorize, and comment on
+      images contributed by different users. The app includes essential features
+      such as search functionality and Google Authentication using Firebase.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm items-center">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Firebase</p>
+      <a
+        href="https://github.com/kunal70006/pinterest-clone"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="transition-all hover:-translate-y-2"
+        ><img src="/github.png" height={24} width={24} alt="github" /></a
+      >
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://google-keep-clone-nextjs.netlify.app/"
+    >
+      Google Keep Clone (Featured Project)
+    </a>
+    <img src="/googlekeep.png" alt="Google keep clone." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      A NextJS web application inspired by Google Keep aims to create a platform
+      where users can add, delete, and modify notes contributed by different
+      users. The app incorporates Google Authentication using Firebase to ensure
+      secure user authentication and management.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm items-center">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Firebase</p>
+      <a
+        href="https://github.com/kunal70006/google-keep-clone"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="transition-all hover:-translate-y-2"
+        ><img src="/github.png" height={24} width={24} alt="github" /></a
+      >
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://better-github-profile.netlify.app/"
+    >
+      Better Github Profile (Featured Project)
+    </a>
+    <img src="/githubprofile.png" alt="Better Github Profile." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      The primary focus of this React web application is to present visually
+      appealing and impressive GitHub statistics. It has been developed using
+      advanced technologies such as NextJS, Chart.js, and Tailwind CSS. The
+      objective of this web app is to offer users a fresh and captivating
+      approach to visualize their GitHub data, elevating the experience of
+      exploring and understanding their statistics.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm items-center">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Github Polyglot</p>
+      <p>Chart.js</p>
+      <p>React Flip Move</p>
+      <a
+        href="https://github.com/kunal70006/github-profile"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="transition-all hover:-translate-y-2"
+        ><img src="/github.png" height={24} width={24} alt="github" /></a
+      >
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://crypto-tracker-react-2021.netlify.app/"
+    >
+      Crypto Tracker (Featured Project)
+    </a>
+    <img src="/crypto.png" alt="Crypto tracker." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      The React Cryptocurrency web application is crafted using a wide range of
+      technologies, including Ant Design, Redux, Rapid API, and more. Its
+      purpose is to provide users with a comprehensive platform to track the
+      prices of diverse cryptocurrencies. Additionally, the app offers relevant
+      news, interactive charts, and other statistical information to enhance the
+      user's cryptocurrency tracking experience.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm items-center">
+      <p>React</p>
+      <p>Ant Design</p>
+      <p>Rapid API</p>
+      <p>Redux Toolkit</p>
+      <a
+        href="https://github.com/kunal70006/crypto-app"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="transition-all hover:-translate-y-2"
+        ><img src="/github.png" height={24} width={24} alt="github" /></a
+      >
+    </div>
+  </div>
 </div>
