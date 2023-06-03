@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center cursor-pointer">
           <img src="/logo.png" alt="Portfolio logo." width="40" height="61" />
           <h1 className="ml-4 tracking-wider font-semibold text-lg text-neutral-950 hover:opacity-80 transition-all">
-            Kunal.dev
+            Kunal
           </h1>
         </div>
         <div
@@ -59,10 +59,26 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="lg:flex gap-8 hidden font-medium">
-          <a className="cursor-pointer">About</a>
-          <a className="cursor-pointer">What I Do</a>
-          <a className="cursor-pointer">My Work</a>
-          <a className="cursor-pointer">Contact</a>
+          <a className="cursor-pointer" href="#about">
+            About
+          </a>
+          <a className="cursor-pointer" href="#projects">
+            Projects
+          </a>
+          <a className="cursor-pointer" href="#work">
+            Work History
+          </a>
+          <a className="cursor-pointer" href="#contact">
+            Contact
+          </a>
+          <a
+            className="cursor-pointer"
+            href="/resume.pdf"
+            rel="noopener"
+            target="_blank"
+          >
+            Resume
+          </a>
         </div>
       </div>
 
@@ -70,15 +86,31 @@ const Navbar = () => {
         show={isHamburgerClicked}
         className="transition-all duration-500 overflow-hidden"
         enterFrom="transform scale-95 opacity-0 max-h-0"
-        enterTo="transform scale-100 opacity-100 max-h-96"
-        leaveFrom="transform scale-100 opacity-100 max-h-96"
+        enterTo="transform scale-100 opacity-100 max-h-[500px]"
+        leaveFrom="transform scale-100 opacity-100 max-h-[500px]"
         leaveTo="transform scale-95 opacity-0 max-h-0"
       >
         <div className="border-y-2 border-solid border-black mt-4 py-8 text-lg flex flex-col gap-8 font-medium">
-          <a className="cursor-pointer w-fit">About</a>
-          <a className="cursor-pointer w-fit">What I Do</a>
-          <a className="cursor-pointer w-fit">My Work</a>
-          <a className="cursor-pointer w-fit">Contact</a>
+          <a className="cursor-pointer w-fit" href="#about">
+            About
+          </a>
+          <a className="cursor-pointer w-fit" href="#projects">
+            Projects
+          </a>
+          <a className="cursor-pointer w-fit" href="#work">
+            Work History
+          </a>
+          <a className="cursor-pointer w-fit" href="#contact">
+            Contact
+          </a>
+          <a
+            className="cursor-pointer w-fit"
+            href="/resume.pdf"
+            rel="noopener"
+            target="_blank"
+          >
+            Resume
+          </a>
           <div className="flex gap-8 items-center">
             <a
               className="cursor-pointer transition-transform hover:-translate-y-2"

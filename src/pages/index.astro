@@ -15,10 +15,11 @@ import Projects from "../components/Projects.astro";
       <Hero />
       <About />
       <WorkHistory />
+      <div class="lg:hidden"><Projects /></div>
       <Footer />
     </main>
     <div
-      class="hidden lg:w-[45%] xl:w-[35%] lg:flex lg:flex-col items-center rounded-lg mt-28 shadow-2xl mb-8 fixed right-0 overflow-y-scroll h-[85vh] [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden 2xl:mr-60"
+      class="hidden lg:w-[45%] xl:w-[35%] lg:flex lg:flex-col items-center rounded-lg mt-28 shadow-2xl hover:shadow-4xl transition-all mb-8 fixed right-0 overflow-y-scroll h-[85vh] [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden 2xl:mr-60"
     >
       <Projects />
     </div>

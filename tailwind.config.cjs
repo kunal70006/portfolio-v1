@@ -10,6 +10,7 @@ module.exports = {
       boxShadow: {
         "hero-button": "2px 2px",
         "hero-hovered": "6px 6px",
+        "4xl": "0 50px 100px -24px rgb(0 0 0 / 0.25)",
       },
     },
   },

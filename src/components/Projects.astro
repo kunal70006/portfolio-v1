@@ -2,11 +2,11 @@
 import Divider from "./Divider.astro";
 ---
 
-<div class="flex flex-col tracking-wider text-justify gap-8">
+<div id="projects" class="flex flex-col tracking-wider text-justify gap-8">
   <h1 class="text-4xl font-bold mt-4 mb-8 text-center justify-center">
     Featured Projects
   </h1>
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
@@ -31,7 +31,7 @@ import Divider from "./Divider.astro";
     </div>
   </div>
   <Divider />
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
@@ -62,7 +62,77 @@ import Divider from "./Divider.astro";
     </div>
   </div>
   <Divider />
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
+    <a
+      class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://twitter-clone-but-emoji-only.vercel.app/"
+    >
+      Emoji Only Twitter (Featured Project)
+    </a>
+    <img src="/emojitwitter.png" alt="emoji only twitter." />
+    <p class="rounded-md p-4 my-4 shadow-lg">
+      A NextJS project inspired by Twitter but with a twist: a user can only
+      tweet with emojis. It&apos;s built using production-grade technologies
+      such as <span class="underline"
+        ><a href="https://clerk.com/" target="_blank" rel="noopener noreferrer"
+          >Clerk</a
+        ></span
+      > for authentication with Github, <span class="underline"
+        ><a href="https://trpc.io/" target="_blank" rel="noopener noreferrer"
+          >tRPC</a
+        ></span
+      > for APIs, and <span class="underline"
+        ><a
+          href="https://www.prisma.io/"
+          target="_blank"
+          rel="noopener noreferrer">Prisma</a
+        ></span
+      > as the ORM layer to connect with a SQL database hosted at <span
+        class="underline"
+        ><a
+          href="https://planetscale.com/"
+          target="_blank"
+          rel="noopener noreferrer">PlanetScale</a
+        ></span
+      > Additionally, it incorporates rate limit protection using <span
+        class="underline"
+        ><a
+          href="https://upstash.com/"
+          target="_blank"
+          rel="noopener noreferrer">Upstash</a
+        ></span
+      > and in case of any issues, the logs provided by <span class="underline"
+        ><a href="https://axiom.co/" target="_blank" rel="noopener noreferrer"
+          >Axiom</a
+        ></span
+      > are hooked up to <span class="underline"
+        ><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
+          >Vercel</a
+        ></span
+      > to provide a clear indication of what went wrong.
+    </p>
+    <div class="flex gap-4 text-slate-600 text-sm flex-wrap">
+      <p>NextJS</p>
+      <p>TailwindCSS</p>
+      <p>Clerk</p>
+      <p>tRPC</p>
+      <p>Prisma</p>
+      <p>PlanetScale</p>
+      <p>Upstash</p>
+      <p>Axiom</p>
+      <a
+        href="https://github.com/kunal70006/twitter-clone-but-emoji-only"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="transition-all hover:-translate-y-2"
+        ><img src="/github.png" height={24} width={24} alt="github" /></a
+      >
+    </div>
+  </div>
+  <Divider />
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
@@ -92,7 +162,7 @@ import Divider from "./Divider.astro";
     </div>
   </div>
   <Divider />
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
@@ -122,7 +192,7 @@ import Divider from "./Divider.astro";
     </div>
   </div>
   <Divider />
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
@@ -156,7 +226,7 @@ import Divider from "./Divider.astro";
     </div>
   </div>
   <Divider />
-  <div class="flex flex-col px-8 py-4">
+  <div class="flex flex-col lg:px-8 py-4">
     <a
       class="text-2xl font-semibold mb-2 transition-colors hover:text-yellow-400"
       target="_blank"
