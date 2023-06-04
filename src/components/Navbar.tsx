@@ -4,6 +4,9 @@ import { Transition } from "@headlessui/react";
 const Navbar = () => {
   const [hover, setHover] = useState(false);
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
+
+  const toggleHambuger = () => setIsHamburgerClicked((h) => !h);
+
   return (
     <nav className="fixed w-full top-0 pt-4 pr-12 2xl:pr-[30rem] bg-[#f9f5f2]">
       <div className="flex items-center justify-between">
@@ -17,7 +20,7 @@ const Navbar = () => {
           className="cursor-pointer lg:hidden"
           onMouseOver={() => setHover(true)}
           onMouseOut={() => setHover(false)}
-          onClick={() => setIsHamburgerClicked((t) => !t)}
+          onClick={toggleHambuger}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,16 +94,32 @@ const Navbar = () => {
         leaveTo="transform scale-95 opacity-0 max-h-0"
       >
         <div className="border-y-2 border-solid border-black mt-4 py-8 text-lg flex flex-col gap-8 font-medium">
-          <a className="cursor-pointer w-fit" href="#about">
+          <a
+            className="cursor-pointer w-fit"
+            onClick={toggleHambuger}
+            href="#about"
+          >
             About
           </a>
-          <a className="cursor-pointer w-fit" href="#projects">
+          <a
+            className="cursor-pointer w-fit"
+            onClick={toggleHambuger}
+            href="#projects"
+          >
             Projects
           </a>
-          <a className="cursor-pointer w-fit" href="#work">
+          <a
+            className="cursor-pointer w-fit"
+            onClick={toggleHambuger}
+            href="#work"
+          >
             Work History
           </a>
-          <a className="cursor-pointer w-fit" href="#contact">
+          <a
+            className="cursor-pointer w-fit"
+            onClick={toggleHambuger}
+            href="#contact"
+          >
             Contact
           </a>
           <a
